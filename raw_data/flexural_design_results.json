@@ -1,0 +1,703 @@
+{
+    "metadata": {
+        "version": "1.0",
+        "beam_data": {
+            "timestamp": "2025-07-12T23:54:45.347199",
+            "design_settings": {
+                "frame_type": "special",
+                "reduction_factor_shear": 0.75,
+                "lightweight_factor_shear": 1.0,
+                "reinforcement_type": "Non-Pre-stressed",
+                "consider_bending_and_axial_design": true,
+                "stirrup_spacing_round_off": 5,
+                "consider_torsion_design": true
+            },
+            "material_properties": {
+                "concrete_grade": "C28",
+                "main_steel_rebar_fy": 414.0,
+                "shear_steel_fy": 276.0,
+                "concrete_cover": 40.0,
+                "max_aggregate_size": 25.0
+            },
+            "reinforcement_parameters": {
+                "main_bar_range": [
+                    16,
+                    32
+                ],
+                "stirrup_bar_range": [
+                    12,
+                    16
+                ],
+                "min_stirrup_spacing": 75.0,
+                "max_stirrup_spacing": 300.0
+            },
+            "floor_groups": {
+                "2nd floor": {
+                    "group 1": {
+                        "beam 1": {
+                            "dimensions": {
+                                "base": 800.0,
+                                "height": 1000.0,
+                                "length": 6000.0
+                            },
+                            "forces": {
+                                "left": {
+                                    "max_moment_bottom": 500.0,
+                                    "max_moment_top": 100.0,
+                                    "max_shear": 100.0,
+                                    "max_axial": 100.0,
+                                    "max_torsion": 100.0
+                                },
+                                "mid": {
+                                    "max_moment_bottom": 400.0,
+                                    "max_moment_top": 400.0,
+                                    "max_shear": 200.0,
+                                    "max_axial": 300.0,
+                                    "max_torsion": 100.0
+                                },
+                                "right": {
+                                    "max_moment_bottom": 200.0,
+                                    "max_moment_top": 200.0,
+                                    "max_shear": 200.0,
+                                    "max_axial": 200.0,
+                                    "max_torsion": 400.0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "design_parameters": {
+            "Es": 200000,
+            "max_steel_ratio": 0.025,
+            "max_aggregate_size": 25,
+            "phi_flexure": 0.9,
+            "minimum_bars": 2
+        },
+        "material_properties": {
+            "concrete_properties": {
+                "grade": "C28",
+                "total_beams_using": 1
+            },
+            "steel_properties": {
+                "main_steel_fy": "414.0 MPa",
+                "shear_steel_fy": "276.0 MPa",
+                "total_beams_using": 1
+            },
+            "other_properties": {
+                "frame_type": "special",
+                "concrete_cover": "40.0 mm",
+                "max_aggregate_size": "25.0 mm",
+                "reduction_factor_shear": 0.75,
+                "consider_bending_and_axial_design": true
+            }
+        },
+        "design_summary": {
+            "total_beams": 1,
+            "total_sections": 1,
+            "design_types": {
+                "singly_reinforced": 1,
+                "doubly_reinforced": 0
+            },
+            "spacing_issues": 0,
+            "design_errors": 0,
+            "sections_by_location": {
+                "left": 0,
+                "mid": 0,
+                "right": 0
+            }
+        }
+    },
+    "results": {
+        "2nd floor": {
+            "group 1": {
+                "beam 1": {
+                    "left": {
+                        "bottom": {
+                            "section": "left",
+                            "moment": 500.0,
+                            "effective_depth": 932.0,
+                            "neutral_axis_depth": 41.146633193037644,
+                            "strain_in_steel": 0.06495209675801876,
+                            "steel_yields": true,
+                            "capacity_check": {
+                                "Mn": 608.9896429782646,
+                                "phi_Mn": 548.0906786804381,
+                                "Mu": 500.0,
+                                "capacity_ratio": 1.0961813573608763,
+                                "passes": true,
+                                "excess_capacity_percent": 9.61813573608763
+                            },
+                            "design_status": "PASS",
+                            "As_required": 1608.495438637974,
+                            "d": 932.0,
+                            "c": 41.146633193037644,
+                            "strain": 0.06495209675801876,
+                            "bar_combinations": [
+                                {
+                                    "bar_diameter": 32,
+                                    "bar_area": 804.247719318987,
+                                    "num_bars": 2,
+                                    "total_area": 1608.495438637974,
+                                    "area_ratio": 1.0,
+                                    "excess_percentage": 0.0,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 98.0
+                                },
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 8,
+                                    "total_area": 1608.495438637974,
+                                    "area_ratio": 1.0,
+                                    "excess_percentage": 0.0,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 96.0
+                                },
+                                {
+                                    "bar_diameter": 28,
+                                    "bar_area": 615.7521601035994,
+                                    "num_bars": 3,
+                                    "total_area": 1847.2564803107982,
+                                    "area_ratio": 1.1484375,
+                                    "excess_percentage": 14.843749999999991,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 91.578125
+                                },
+                                {
+                                    "bar_diameter": 20,
+                                    "bar_area": 314.1592653589793,
+                                    "num_bars": 6,
+                                    "total_area": 1884.9555921538758,
+                                    "area_ratio": 1.171875,
+                                    "excess_percentage": 17.187499999999996,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 89.40625
+                                },
+                                {
+                                    "bar_diameter": 25,
+                                    "bar_area": 490.8738521234052,
+                                    "num_bars": 4,
+                                    "total_area": 1963.4954084936207,
+                                    "area_ratio": 1.220703125,
+                                    "excess_percentage": 22.070312500000004,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 88.96484375
+                                },
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 9,
+                                    "total_area": 1809.5573684677208,
+                                    "area_ratio": 1.125,
+                                    "excess_percentage": 12.5,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 88.75
+                                },
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 10,
+                                    "total_area": 2010.6192982974676,
+                                    "area_ratio": 1.25,
+                                    "excess_percentage": 25.0,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 81.5
+                                },
+                                {
+                                    "bar_diameter": 20,
+                                    "bar_area": 314.1592653589793,
+                                    "num_bars": 7,
+                                    "total_area": 2199.1148575128555,
+                                    "area_ratio": 1.3671875000000002,
+                                    "excess_percentage": 36.718750000000014,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 78.640625
+                                },
+                                {
+                                    "bar_diameter": 32,
+                                    "bar_area": 804.247719318987,
+                                    "num_bars": 3,
+                                    "total_area": 2412.743157956961,
+                                    "area_ratio": 1.5,
+                                    "excess_percentage": 50.0,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 74.0
+                                }
+                            ],
+                            "recommended_bars": {
+                                "bar_diameter": 32,
+                                "bar_area": 804.247719318987,
+                                "num_bars": 2,
+                                "total_area": 1608.495438637974,
+                                "area_ratio": 1.0,
+                                "excess_percentage": 0.0,
+                                "meets_min_bars": true,
+                                "efficiency_score": 98.0
+                            },
+                            "ductile_controlling": false,
+                            "ductile_requirement": 615.7521601035994,
+                            "note": "Ductile requirement: 616 mm� (satisfied)"
+                        },
+                        "top": {
+                            "section": "left",
+                            "moment": 100.0,
+                            "effective_depth": 940.0,
+                            "neutral_axis_depth": 10.286658298259411,
+                            "strain_in_steel": 0.2711415062340671,
+                            "steel_yields": true,
+                            "capacity_check": {
+                                "Mn": 155.76270216075596,
+                                "phi_Mn": 140.18643194468038,
+                                "Mu": 100.0,
+                                "capacity_ratio": 1.401864319446804,
+                                "passes": true,
+                                "excess_capacity_percent": 40.18643194468039
+                            },
+                            "design_status": "PASS",
+                            "As_required": 402.1238596594935,
+                            "d": 940.0,
+                            "c": 10.286658298259411,
+                            "strain": 0.2711415062340671,
+                            "bar_combinations": [
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 2,
+                                    "total_area": 402.1238596594935,
+                                    "area_ratio": 1.0,
+                                    "excess_percentage": 0.0,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 98.0
+                                },
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 3,
+                                    "total_area": 603.1857894892403,
+                                    "area_ratio": 1.5,
+                                    "excess_percentage": 50.0,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 74.0
+                                }
+                            ],
+                            "recommended_bars": {
+                                "bar_diameter": 16,
+                                "bar_area": 201.06192982974676,
+                                "num_bars": 2,
+                                "total_area": 402.1238596594935,
+                                "area_ratio": 1.0,
+                                "excess_percentage": 0.0,
+                                "meets_min_bars": true,
+                                "efficiency_score": 98.0
+                            },
+                            "ductile_controlling": false,
+                            "ductile_requirement": 402.1238596594935,
+                            "note": "Ductile requirement: 402 mm� (satisfied)"
+                        }
+                    },
+                    "mid": {
+                        "bottom": {
+                            "section": "mid",
+                            "moment": 400.0,
+                            "effective_depth": 934.0,
+                            "neutral_axis_depth": 31.502891038419445,
+                            "strain_in_steel": 0.08594421774124833,
+                            "steel_yields": true,
+                            "capacity_check": {
+                                "Mn": 469.36701774910136,
+                                "phi_Mn": 422.4303159741912,
+                                "Mu": 400.0,
+                                "capacity_ratio": 1.056075789935478,
+                                "passes": true,
+                                "excess_capacity_percent": 5.6075789935478015
+                            },
+                            "design_status": "PASS",
+                            "As_required": 1231.5043202071988,
+                            "d": 934.0,
+                            "c": 31.502891038419445,
+                            "strain": 0.08594421774124833,
+                            "bar_combinations": [
+                                {
+                                    "bar_diameter": 20,
+                                    "bar_area": 314.1592653589793,
+                                    "num_bars": 4,
+                                    "total_area": 1256.6370614359173,
+                                    "area_ratio": 1.0204081632653061,
+                                    "excess_percentage": 2.040816326530624,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 98.97959183673468
+                                },
+                                {
+                                    "bar_diameter": 28,
+                                    "bar_area": 615.7521601035994,
+                                    "num_bars": 2,
+                                    "total_area": 1231.5043202071988,
+                                    "area_ratio": 1.0,
+                                    "excess_percentage": 0.0,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 98.0
+                                },
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 7,
+                                    "total_area": 1407.4335088082273,
+                                    "area_ratio": 1.142857142857143,
+                                    "excess_percentage": 14.285714285714294,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 89.85714285714285
+                                },
+                                {
+                                    "bar_diameter": 25,
+                                    "bar_area": 490.8738521234052,
+                                    "num_bars": 3,
+                                    "total_area": 1472.6215563702156,
+                                    "area_ratio": 1.1957908163265307,
+                                    "excess_percentage": 19.57908163265307,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 89.21045918367346
+                                },
+                                {
+                                    "bar_diameter": 20,
+                                    "bar_area": 314.1592653589793,
+                                    "num_bars": 5,
+                                    "total_area": 1570.7963267948967,
+                                    "area_ratio": 1.2755102040816328,
+                                    "excess_percentage": 27.551020408163286,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 85.22448979591836
+                                },
+                                {
+                                    "bar_diameter": 32,
+                                    "bar_area": 804.247719318987,
+                                    "num_bars": 2,
+                                    "total_area": 1608.495438637974,
+                                    "area_ratio": 1.306122448979592,
+                                    "excess_percentage": 30.612244897959194,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 82.6938775510204
+                                },
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 8,
+                                    "total_area": 1608.495438637974,
+                                    "area_ratio": 1.306122448979592,
+                                    "excess_percentage": 30.612244897959194,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 80.6938775510204
+                                },
+                                {
+                                    "bar_diameter": 28,
+                                    "bar_area": 615.7521601035994,
+                                    "num_bars": 3,
+                                    "total_area": 1847.2564803107982,
+                                    "area_ratio": 1.5,
+                                    "excess_percentage": 50.0,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 74.0
+                                },
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 9,
+                                    "total_area": 1809.5573684677208,
+                                    "area_ratio": 1.469387755102041,
+                                    "excess_percentage": 46.93877551020409,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 71.53061224489795
+                                }
+                            ],
+                            "recommended_bars": {
+                                "bar_diameter": 20,
+                                "bar_area": 314.1592653589793,
+                                "num_bars": 4,
+                                "total_area": 1256.6370614359173,
+                                "area_ratio": 1.0204081632653061,
+                                "excess_percentage": 2.040816326530624,
+                                "meets_min_bars": true,
+                                "efficiency_score": 98.97959183673468
+                            },
+                            "ductile_controlling": false,
+                            "ductile_requirement": 402.1238596594935,
+                            "note": "Ductile requirement: 402 mm� (satisfied)"
+                        },
+                        "top": {
+                            "section": "mid",
+                            "moment": 400.0,
+                            "effective_depth": 934.0,
+                            "neutral_axis_depth": 31.502891038419445,
+                            "strain_in_steel": 0.08594421774124833,
+                            "steel_yields": true,
+                            "capacity_check": {
+                                "Mn": 469.36701774910136,
+                                "phi_Mn": 422.4303159741912,
+                                "Mu": 400.0,
+                                "capacity_ratio": 1.056075789935478,
+                                "passes": true,
+                                "excess_capacity_percent": 5.6075789935478015
+                            },
+                            "design_status": "PASS",
+                            "As_required": 1231.5043202071988,
+                            "d": 934.0,
+                            "c": 31.502891038419445,
+                            "strain": 0.08594421774124833,
+                            "bar_combinations": [
+                                {
+                                    "bar_diameter": 20,
+                                    "bar_area": 314.1592653589793,
+                                    "num_bars": 4,
+                                    "total_area": 1256.6370614359173,
+                                    "area_ratio": 1.0204081632653061,
+                                    "excess_percentage": 2.040816326530624,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 98.97959183673468
+                                },
+                                {
+                                    "bar_diameter": 28,
+                                    "bar_area": 615.7521601035994,
+                                    "num_bars": 2,
+                                    "total_area": 1231.5043202071988,
+                                    "area_ratio": 1.0,
+                                    "excess_percentage": 0.0,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 98.0
+                                },
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 7,
+                                    "total_area": 1407.4335088082273,
+                                    "area_ratio": 1.142857142857143,
+                                    "excess_percentage": 14.285714285714294,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 89.85714285714285
+                                },
+                                {
+                                    "bar_diameter": 25,
+                                    "bar_area": 490.8738521234052,
+                                    "num_bars": 3,
+                                    "total_area": 1472.6215563702156,
+                                    "area_ratio": 1.1957908163265307,
+                                    "excess_percentage": 19.57908163265307,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 89.21045918367346
+                                },
+                                {
+                                    "bar_diameter": 20,
+                                    "bar_area": 314.1592653589793,
+                                    "num_bars": 5,
+                                    "total_area": 1570.7963267948967,
+                                    "area_ratio": 1.2755102040816328,
+                                    "excess_percentage": 27.551020408163286,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 85.22448979591836
+                                },
+                                {
+                                    "bar_diameter": 32,
+                                    "bar_area": 804.247719318987,
+                                    "num_bars": 2,
+                                    "total_area": 1608.495438637974,
+                                    "area_ratio": 1.306122448979592,
+                                    "excess_percentage": 30.612244897959194,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 82.6938775510204
+                                },
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 8,
+                                    "total_area": 1608.495438637974,
+                                    "area_ratio": 1.306122448979592,
+                                    "excess_percentage": 30.612244897959194,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 80.6938775510204
+                                },
+                                {
+                                    "bar_diameter": 28,
+                                    "bar_area": 615.7521601035994,
+                                    "num_bars": 3,
+                                    "total_area": 1847.2564803107982,
+                                    "area_ratio": 1.5,
+                                    "excess_percentage": 50.0,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 74.0
+                                },
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 9,
+                                    "total_area": 1809.5573684677208,
+                                    "area_ratio": 1.469387755102041,
+                                    "excess_percentage": 46.93877551020409,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 71.53061224489795
+                                }
+                            ],
+                            "recommended_bars": {
+                                "bar_diameter": 20,
+                                "bar_area": 314.1592653589793,
+                                "num_bars": 4,
+                                "total_area": 1256.6370614359173,
+                                "area_ratio": 1.0204081632653061,
+                                "excess_percentage": 2.040816326530624,
+                                "meets_min_bars": true,
+                                "efficiency_score": 98.97959183673468
+                            },
+                            "ductile_controlling": false,
+                            "ductile_requirement": 402.1238596594935,
+                            "note": "Ductile requirement: 402 mm� (satisfied)"
+                        }
+                    },
+                    "right": {
+                        "bottom": {
+                            "section": "right",
+                            "moment": 200.0,
+                            "effective_depth": 938.0,
+                            "neutral_axis_depth": 16.072903591030332,
+                            "strain_in_steel": 0.17207726491748418,
+                            "steel_yields": true,
+                            "capacity_check": {
+                                "Mn": 242.21928965823574,
+                                "phi_Mn": 217.99736069241217,
+                                "Mu": 200.0,
+                                "capacity_ratio": 1.0899868034620608,
+                                "passes": true,
+                                "excess_capacity_percent": 8.99868034620608
+                            },
+                            "design_status": "PASS",
+                            "As_required": 628.3185307179587,
+                            "d": 938.0,
+                            "c": 16.072903591030332,
+                            "strain": 0.17207726491748418,
+                            "bar_combinations": [
+                                {
+                                    "bar_diameter": 20,
+                                    "bar_area": 314.1592653589793,
+                                    "num_bars": 2,
+                                    "total_area": 628.3185307179587,
+                                    "area_ratio": 1.0,
+                                    "excess_percentage": 0.0,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 98.0
+                                },
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 4,
+                                    "total_area": 804.247719318987,
+                                    "area_ratio": 1.28,
+                                    "excess_percentage": 27.999999999999993,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 86.0
+                                },
+                                {
+                                    "bar_diameter": 20,
+                                    "bar_area": 314.1592653589793,
+                                    "num_bars": 3,
+                                    "total_area": 942.4777960769379,
+                                    "area_ratio": 1.5,
+                                    "excess_percentage": 49.999999999999986,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 74.0
+                                }
+                            ],
+                            "recommended_bars": {
+                                "bar_diameter": 20,
+                                "bar_area": 314.1592653589793,
+                                "num_bars": 2,
+                                "total_area": 628.3185307179587,
+                                "area_ratio": 1.0,
+                                "excess_percentage": 0.0,
+                                "meets_min_bars": true,
+                                "efficiency_score": 98.0
+                            },
+                            "ductile_controlling": false,
+                            "ductile_requirement": 615.7521601035994,
+                            "note": "Ductile requirement: 616 mm� (satisfied)"
+                        },
+                        "top": {
+                            "section": "right",
+                            "moment": 200.0,
+                            "effective_depth": 938.0,
+                            "neutral_axis_depth": 16.072903591030332,
+                            "strain_in_steel": 0.17207726491748418,
+                            "steel_yields": true,
+                            "capacity_check": {
+                                "Mn": 242.21928965823574,
+                                "phi_Mn": 217.99736069241217,
+                                "Mu": 200.0,
+                                "capacity_ratio": 1.0899868034620608,
+                                "passes": true,
+                                "excess_capacity_percent": 8.99868034620608
+                            },
+                            "design_status": "PASS",
+                            "As_required": 628.3185307179587,
+                            "d": 938.0,
+                            "c": 16.072903591030332,
+                            "strain": 0.17207726491748418,
+                            "bar_combinations": [
+                                {
+                                    "bar_diameter": 20,
+                                    "bar_area": 314.1592653589793,
+                                    "num_bars": 2,
+                                    "total_area": 628.3185307179587,
+                                    "area_ratio": 1.0,
+                                    "excess_percentage": 0.0,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 98.0
+                                },
+                                {
+                                    "bar_diameter": 16,
+                                    "bar_area": 201.06192982974676,
+                                    "num_bars": 4,
+                                    "total_area": 804.247719318987,
+                                    "area_ratio": 1.28,
+                                    "excess_percentage": 27.999999999999993,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 86.0
+                                },
+                                {
+                                    "bar_diameter": 20,
+                                    "bar_area": 314.1592653589793,
+                                    "num_bars": 3,
+                                    "total_area": 942.4777960769379,
+                                    "area_ratio": 1.5,
+                                    "excess_percentage": 49.999999999999986,
+                                    "meets_min_bars": true,
+                                    "efficiency_score": 74.0
+                                }
+                            ],
+                            "recommended_bars": {
+                                "bar_diameter": 20,
+                                "bar_area": 314.1592653589793,
+                                "num_bars": 2,
+                                "total_area": 628.3185307179587,
+                                "area_ratio": 1.0,
+                                "excess_percentage": 0.0,
+                                "meets_min_bars": true,
+                                "efficiency_score": 98.0
+                            },
+                            "ductile_controlling": false,
+                            "ductile_requirement": 402.1238596594935,
+                            "note": "Ductile requirement: 402 mm� (satisfied)"
+                        }
+                    },
+                    "frame_type": "special",
+                    "ductile_requirements": {
+                        "max_ast_all_zones": 1608.495438637974,
+                        "max_top_steel": 1231.5043202071988,
+                        "ast_25_percent": 402.1238596594935,
+                        "ast_50_percent_top": 615.7521601035994,
+                        "bottom_left_right": 615.7521601035994,
+                        "top_left_right": 402.1238596594935,
+                        "bottom_mid": 402.1238596594935,
+                        "top_mid": 402.1238596594935
+                    }
+                }
+            }
+        }
+    }
+}

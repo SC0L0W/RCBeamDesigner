@@ -1,0 +1,30 @@
+File Structure
+beam_design_system/
+├── inputs/
+│   ├── user_inputs.py          #1 All user input parameters
+│   ├── material_properties.py  # Material property definitions
+│   └── constants.py            # Code constants and factors
+├── core/
+│   ├── flexural_design.py      #2 Flexural reinforcement calculations
+│   ├── shear_design.py         #3 Shear reinforcement calculations
+│   ├── torsion_design.py       #4 Torsion reinforcement calculations
+│   └── beam_detailing.py       #5 detailing calculations
+│
+├── output/
+│   ├── professional_beam_design_report.pdf     (output#6)(current position)
+│   ├── detailed_report_generator.py            #6 detailed Design report generation
+│   ├── summary_report_generator.py             #7 summary Design report generation
+│   └── schedule_generator.py                   #8 Reinforcement schedule generation
+│
+├── main.py                                     #0 Main execution script (from input to flexural only)
+│
+├── output_data/
+│   ├── detailed_drawing.dxf                (output#5)
+│   ├── professional_beam_design_report.pdf (output#6)(ideal position)
+│   └── structural_design_summary.csv       (output#7)
+├── raw_data/
+│   ├── beam_data.json                      (output#1)
+│   ├── flexural_design_results.json        (output#2)
+│   ├── shear_design_results.json           (output#3)
+│   └── torsion_design_results.json         (output#4)
+

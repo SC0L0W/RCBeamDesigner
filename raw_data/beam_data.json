@@ -1,0 +1,67 @@
+{
+  "timestamp": "2025-07-12T23:54:45.347199",
+  "design_settings": {
+    "frame_type": "special",
+    "reduction_factor_shear": 0.75,
+    "lightweight_factor_shear": 1.0,
+    "reinforcement_type": "Non-Pre-stressed",
+    "consider_bending_and_axial_design": true,
+    "stirrup_spacing_round_off": 5,
+    "consider_torsion_design": true
+  },
+  "material_properties": {
+    "concrete_grade": "C28",
+    "main_steel_rebar_fy": 414.0,
+    "shear_steel_fy": 276.0,
+    "concrete_cover": 40.0,
+    "max_aggregate_size": 25.0
+  },
+  "reinforcement_parameters": {
+    "main_bar_range": [
+      16,
+      32
+    ],
+    "stirrup_bar_range": [
+      12,
+      16
+    ],
+    "min_stirrup_spacing": 75.0,
+    "max_stirrup_spacing": 300.0
+  },
+  "floor_groups": {
+    "2nd floor": {
+      "group 1": {
+        "beam 1": {
+          "dimensions": {
+            "base": 800.0,
+            "height": 1000.0,
+            "length": 6000.0
+          },
+          "forces": {
+            "left": {
+              "max_moment_bottom": 500.0,
+              "max_moment_top": 100.0,
+              "max_shear": 100.0,
+              "max_axial": 100.0,
+              "max_torsion": 100.0
+            },
+            "mid": {
+              "max_moment_bottom": 400.0,
+              "max_moment_top": 400.0,
+              "max_shear": 200.0,
+              "max_axial": 300.0,
+              "max_torsion": 100.0
+            },
+            "right": {
+              "max_moment_bottom": 200.0,
+              "max_moment_top": 200.0,
+              "max_shear": 200.0,
+              "max_axial": 200.0,
+              "max_torsion": 400.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

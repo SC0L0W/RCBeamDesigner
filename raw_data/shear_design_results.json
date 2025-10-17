@@ -1,0 +1,140 @@
+{
+  "timestamp": "2025-07-12T23:55:18.934688",
+  "design_parameters": {
+    "frame_type": "special",
+    "concrete_grade": "C28",
+    "shear_steel_fy": 276.0,
+    "reduction_factor": 0.75,
+    "stirrup_bar_range": [
+      12,
+      16
+    ],
+    "stirrup_spacing_round_off": 5,
+    "spacing_limits": {
+      "minimum": 75.0,
+      "maximum": 300.0
+    }
+  },
+  "beam_designs": {
+    "2nd floor": {
+      "group 1": {
+        "beam 1": {
+          "left": {
+            "section": "left",
+            "dimensions": {
+              "width": 300,
+              "height": 550,
+              "effective_depth": 490.0,
+              "main_bar_diameter": 16
+            },
+            "forces": {
+              "factored_shear": 100000.0,
+              "factored_moment": 500000000.0,
+              "axial_force": 100000.0
+            },
+            "extracted_forces": {
+              "max_moment_bottom": 500.0,
+              "max_moment_top": 100.0,
+              "max_shear": 100.0,
+              "max_axial": 100.0,
+              "max_torsion": 100.0
+            },
+            "material_properties": {
+              "concrete_strength": 28,
+              "steel_yield_strength": 276.0,
+              "rho": 0.006838841150671658
+            },
+            "concrete_capacity": 131591.20345912725,
+            "required_steel_shear": 1742.1298742060899,
+            "stirrup_legs": 2,
+            "stirrup_diameter": 12,
+            "spacing": 120,
+            "shear_reinforcement_required": true,
+            "stirrup_area": 226.1946710584651,
+            "spacing_limits": {
+              "minimum": 75.0,
+              "maximum": 122.5
+            },
+            "spacing_required": 17559.292086582995
+          },
+          "mid": {
+            "section": "mid",
+            "dimensions": {
+              "width": 300,
+              "height": 550,
+              "effective_depth": 488.0,
+              "main_bar_diameter": 20
+            },
+            "forces": {
+              "factored_shear": 200000.0,
+              "factored_moment": 400000000.0,
+              "axial_force": 300000.0
+            },
+            "extracted_forces": {
+              "max_moment_bottom": 400.0,
+              "max_moment_top": 400.0,
+              "max_shear": 200.0,
+              "max_axial": 300.0,
+              "max_torsion": 100.0
+            },
+            "material_properties": {
+              "concrete_strength": 28,
+              "steel_yield_strength": 276.0,
+              "rho": 0.008583586485218014
+            },
+            "concrete_capacity": 145934.80326997847,
+            "required_steel_shear": 120731.86339668822,
+            "stirrup_legs": 2,
+            "stirrup_diameter": 12,
+            "spacing": 120,
+            "shear_reinforcement_required": true,
+            "stirrup_area": 226.1946710584651,
+            "spacing_limits": {
+              "minimum": 75.0,
+              "maximum": 122.0
+            },
+            "spacing_required": 252.3419004593799
+          },
+          "right": {
+            "section": "right",
+            "dimensions": {
+              "width": 300,
+              "height": 550,
+              "effective_depth": 488.0,
+              "main_bar_diameter": 20
+            },
+            "forces": {
+              "factored_shear": 200000.0,
+              "factored_moment": 200000000.0,
+              "axial_force": 200000.0
+            },
+            "extracted_forces": {
+              "max_moment_bottom": 200.0,
+              "max_moment_top": 200.0,
+              "max_shear": 200.0,
+              "max_axial": 200.0,
+              "max_torsion": 400.0
+            },
+            "material_properties": {
+              "concrete_strength": 28,
+              "steel_yield_strength": 276.0,
+              "rho": 0.004291793242609007
+            },
+            "concrete_capacity": 140343.43149718235,
+            "required_steel_shear": 126323.23516948434,
+            "stirrup_legs": 2,
+            "stirrup_diameter": 12,
+            "spacing": 120,
+            "shear_reinforcement_required": true,
+            "stirrup_area": 226.1946710584651,
+            "spacing_limits": {
+              "minimum": 75.0,
+              "maximum": 122.0
+            },
+            "spacing_required": 241.1726379129506
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "timestamp": "2025-07-12T23:55:22.499326",
+  "design_info": {
+    "code": "NSCP 2015",
+    "software": "STAADX ELEMENTS",
+    "version": "1.0"
+  },
+  "parameters": {
+    "frame_type": "special",
+    "concrete_grade": "C28",
+    "steel_fy": 414.0,
+    "reduction_factor": 0.75,
+    "concrete_cover": 40.0,
+    "consider_torsion": true
+  },
+  "summary": {
+    "total_beams": 1,
+    "beams_requiring_torsion_reinforcement": 0,
+    "beams_with_side_face_reinforcement": 1
+  },
+  "beams": {
+    "2nd floor": {
+      "group 1": {
+        "beam 1": {
+          "beam_dimensions": {
+            "width": 800.0,
+            "height": 1000.0,
+            "length": 6000.0
+          },
+          "sections": {
+            "left": {
+              "section": "left",
+              "dimensions": {
+                "width": 800.0,
+                "height": 1000.0,
+                "length": 6000.0,
+                "effective_depth": 950.0,
+                "cover": 40.0
+              },
+              "forces": {
+                "torsion_kNm": 100.0,
+                "axial_kN": 100.0,
+                "torsion_Nmm": 100000000.0,
+                "axial_N": 100000.0
+              },
+              "capacity": {
+                "concrete_torsion_capacity": 1117565353.7936833,
+                "factored_capacity": 838174015.3452625,
+                "capacity_ratio": 0.11930696749028634,
+                "reinforcement_required": false
+              },
+              "reinforcement": {
+                "stirrup_diameter": 10,
+                "spacing": 300,
+                "area_required": 0,
+                "area_per_unit_length": 0,
+                "side_face_reinforcement": {
+                  "required": true,
+                  "min_area_per_face": 800.0,
+                  "max_spacing": 300,
+                  "height_threshold": 750,
+                  "justification": "Height 1000.0mm > 750mm"
+                }
+              },
+              "material_properties": {
+                "concrete_grade": "C28",
+                "fc_prime": 28,
+                "steel_fy": 414.0,
+                "reduction_factor": 0.75
+              }
+            },
+            "mid": {
+              "section": "mid",
+              "dimensions": {
+                "width": 800.0,
+                "height": 1000.0,
+                "length": 6000.0,
+                "effective_depth": 950.0,
+                "cover": 40.0
+              },
+              "forces": {
+                "torsion_kNm": 100.0,
+                "axial_kN": 300.0,
+                "torsion_Nmm": 100000000.0,
+                "axial_N": 300000.0
+              },
+              "capacity": {
+                "concrete_torsion_capacity": 1117565353.7936833,
+                "factored_capacity": 838174015.3452625,
+                "capacity_ratio": 0.11930696749028634,
+                "reinforcement_required": false
+              },
+              "reinforcement": {
+                "stirrup_diameter": 10,
+                "spacing": 300,
+                "area_required": 0,
+                "area_per_unit_length": 0,
+                "side_face_reinforcement": {
+                  "required": true,
+                  "min_area_per_face": 800.0,
+                  "max_spacing": 300,
+                  "height_threshold": 750,
+                  "justification": "Height 1000.0mm > 750mm"
+                }
+              },
+              "material_properties": {
+                "concrete_grade": "C28",
+                "fc_prime": 28,
+                "steel_fy": 414.0,
+                "reduction_factor": 0.75
+              }
+            },
+            "right": {
+              "section": "right",
+              "dimensions": {
+                "width": 800.0,
+                "height": 1000.0,
+                "length": 6000.0,
+                "effective_depth": 950.0,
+                "cover": 40.0
+              },
+              "forces": {
+                "torsion_kNm": 400.0,
+                "axial_kN": 200.0,
+                "torsion_Nmm": 400000000.0,
+                "axial_N": 200000.0
+              },
+              "capacity": {
+                "concrete_torsion_capacity": 1117565353.7936833,
+                "factored_capacity": 838174015.3452625,
+                "capacity_ratio": 0.47722786996114536,
+                "reinforcement_required": false
+              },
+              "reinforcement": {
+                "stirrup_diameter": 10,
+                "spacing": 300,
+                "area_required": 0,
+                "area_per_unit_length": 0,
+                "side_face_reinforcement": {
+                  "required": true,
+                  "min_area_per_face": 800.0,
+                  "max_spacing": 300,
+                  "height_threshold": 750,
+                  "justification": "Height 1000.0mm > 750mm"
+                }
+              },
+              "material_properties": {
+                "concrete_grade": "C28",
+                "fc_prime": 28,
+                "steel_fy": 414.0,
+                "reduction_factor": 0.75
+              }
+            }
+          },
+          "summary": {
+            "torsion_reinforcement_required": false,
+            "side_face_reinforcement_required": true
+          }
+        }
+      }
+    }
+  }
+}

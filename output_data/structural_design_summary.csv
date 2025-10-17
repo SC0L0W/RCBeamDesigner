@@ -1,0 +1,2 @@
+GRP,Beam,Type,Size,Material,Bottom Left,Bottom Mid,Bottom Right,Top Left,Top Mid,Top Right,Shear Left,Shear Mid,Shear Right,SFR
+G1,B1,Dcl,300 x 550,C28;Fy414;Fy276,2-#32,4-#20,2-#20,2-#16,4-#20,2-#20,2L-#12 @ 120,2L-#12 @ 120,2L-#12 @ 120,-
