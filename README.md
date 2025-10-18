@@ -1013,8 +1013,8 @@ elements.append(Paragraph(flexural_formulas, formula_style))
 ╔══════════════════════════════════════════════════════════╗
 ║  STRUCTURAL DESIGN REPORT                                ║
 ║  Comprehensive Beam Design Analysis                      ║
-║  ─────────────────────────────────────────────────────  ║
-║  Project: 3 Storey Residential Building                 ║
+║  ─────────────────────────────────────────────────────   ║
+║  Project: 3 Storey Residential Building                  ║
 ║  Design Code: NSCP 2015                                  ║
 ║  Date: October 18, 2025                                  ║
 ╚══════════════════════════════════════════════════════════╝
@@ -1036,9 +1036,9 @@ FLEXURAL DESIGN ANALYSIS
 ┌───────────────────────────────────────────────────────┐
 │ Key Design Equations:                                 │
 │                                                       │
-│ 1. Minimum Reinforcement Area:                       │
-│    As,min = max {0.25√f'c × bw × d / fy,            │
-│                  1.4 × bw × d / fy}                  │
+│ 1. Minimum Reinforcement Area:                        │
+│    As,min = max {0.25√f'c × bw × d / fy,              │
+│                  1.4 × bw × d / fy}                   │
 └───────────────────────────────────────────────────────┘
 
 3.3 Design Results
@@ -1048,16 +1048,16 @@ Floor: 2F
 Group: B1
 Beam 101 - Design Summary
 
-┌────────┬──────────┬────────────┬──────────────┬──────────┬─────────┐
-│Section │ Moment   │ Required   │ Provided     │ Capacity │ Status  │
-│        │ (kN⋅m)   │ As (mm²)   │ Reinforcement│  Check   │         │
-├────────┼──────────┼────────────┼──────────────┼──────────┼─────────┤
-│ LEFT   │ 85.50    │ 1245.8     │ 4 × ⌀20mm   │ 1.01     │ ✓ ADEQUATE│
-│ (BOTTOM)                                                              │
-├────────┼──────────┼────────────┼──────────────┼──────────┼─────────┤
-│ LEFT   │ 125.30   │ 1825.4     │ 6 × ⌀20mm   │ 1.04     │ ✓ ADEQUATE│
-│ (TOP)                                                                 │
-└────────┴──────────┴────────────┴──────────────┴──────────┴─────────┘
+┌────────┬──────────┬────────────┬──────────────┬──────────┬──────────────┐
+│Section │ Moment   │ Required   │ Provided     │ Capacity │ Status       │
+│        │ (kN⋅m)   │ As (mm²)   │ Reinforcement │  Check   │             │
+├────────┼──────────┼────────────┼──────────────┼──────────┼──────────────┐
+│ LEFT   │ 85.50    │ 1245.8     │ 4 × ⌀20mm    │ 1.01     │ ✓ ADEQUATE   │
+│ (BOTTOM)                                                                │
+├────────┼──────────┼────────────┼──────────────┼──────────┼──────────────┐
+│ LEFT   │ 125.30   │ 1825.4     │ 6 × ⌀20mm    │ 1.04     │ ✓ ADEQUATE   │
+│ (TOP)                                                                   │
+└────────┴──────────┴────────────┴──────────────┴──────────┴──────────────┘
 
 [Performance Charts]
 [Verification Tables]
