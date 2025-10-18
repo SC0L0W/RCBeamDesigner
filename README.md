@@ -112,73 +112,28 @@ The system operates through a **modular 8-step processing pipeline**:
 
 ## 🔄 Processing Pipeline
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│ STEP 0: Interactive Data Collection (user_inputs.py)       │
-│ • Floor groups → Beam groups → Individual beams            │
-│ • Dimensions, forces, materials per beam                   │
-│ • Design settings (frame type, factors, preferences)       │
-└─────────────────────────────────────────────────────────────┘
-                          ↓
-┌─────────────────────────────────────────────────────────────┐
-│ STEP 1: Main Execution (main.py)                           │
-│ • Initialize FlexuralDesigner with beam_data.json          │
-│ • Validate data structure                                  │
-│ • Set material properties and design parameters            │
-└─────────────────────────────────────────────────────────────┘
-                          ↓
-┌─────────────────────────────────────────────────────────────┐
-│ STEP 2: Flexural Design (flexural_design.py)               │
-│ • Design all sections (left/mid/right, top/bottom)         │
-│ • Calculate required steel areas                           │
-│ • Optimize bar combinations                                │
-│ • Verify spacing & arrange multiple layers                 │
-│ • Apply ductility requirements (special frames)            │
-│ • Generate flexural_design_results.json                    │
-└─────────────────────────────────────────────────────────────┘
-                          ↓
-┌─────────────────────────────────────────────────────────────┐
-│ STEP 3: Shear Design (shear_design.py)                     │
-│ • Calculate concrete shear capacity (Vc)                   │
-│ • Determine required steel shear (Vs)                      │
-│ • Design stirrup spacing and configuration                 │
-│ • Generate shear_design_results.json                       │
-└─────────────────────────────────────────────────────────────┘
-                          ↓
-┌─────────────────────────────────────────────────────────────┐
-│ STEP 4: Torsion Design (torsion_design.py)                 │
-│ • Check torsion threshold requirements                     │
-│ • Calculate torsional reinforcement                        │
-│ • Combine with shear reinforcement                         │
-│ • Generate torsion_design_results.json                     │
-└─────────────────────────────────────────────────────────────┘
-                          ↓
-┌─────────────────────────────────────────────────────────────┐
-│ STEP 5: Beam Detailing (beam_detailing.py)                 │
-│ • Development length calculations                          │
-│ • Generate DXF drawings with reinforcement layout          │
-│ • Create detailed_drawing.dxf                              │
-└─────────────────────────────────────────────────────────────┘
-                          ↓
-┌─────────────────────────────────────────────────────────────┐
-│ STEP 6: Detailed Report (detailed_report_generator.py)     │
-│ • Professional PDF with calculations                       │
-│ • Charts, tables, and verification                         │
-│ • Create professional_beam_design_report.pdf               │
-└─────────────────────────────────────────────────────────────┘
-                          ↓
-┌─────────────────────────────────────────────────────────────┐
-│ STEP 7: Summary Report (summary_report_generator.py)       │
-│ • CSV export for spreadsheet analysis                      │
-│ • Create structural_design_summary.csv                     │
-└─────────────────────────────────────────────────────────────┘
-                          ↓
-┌─────────────────────────────────────────────────────────────┐
-│ STEP 8: Schedule Generator (schedule_generator.py)         │
-│ • Bar bending schedules                                    │
-│ • Material quantity takeoff                                │
-│ • Construction schedules                                   │
-└─────────────────────────────────────────────────────────────┘
+```mermaid
+graph LR
+    A[#0 User Inputs] --> B[#1 Main Script]
+    B --> C[#2 Flexural Design]
+    C --> D[#3 Shear Design]
+    D --> E[#4 Torsion Design]
+    E --> F[#5 Beam Detailing]
+    F --> G[#6 PDF Report]
+    F --> H[#7 Summary CSV]
+    F --> I[#8 Schedule]
+    F --> J[#5 DXF Drawing]
+    
+    style A fill:#e1f5ff,stroke:#333,stroke-width:2px,color:#000
+    style B fill:#fff4e1,stroke:#333,stroke-width:2px,color:#000
+    style C fill:#ffe1e1,stroke:#333,stroke-width:2px,color:#000
+    style D fill:#ffe1e1,stroke:#333,stroke-width:2px,color:#000
+    style E fill:#ffe1e1,stroke:#333,stroke-width:2px,color:#000
+    style F fill:#ffe1e1,stroke:#333,stroke-width:2px,color:#000
+    style G fill:#e1ffe1,stroke:#333,stroke-width:2px,color:#000
+    style H fill:#e1ffe1,stroke:#333,stroke-width:2px,color:#000
+    style I fill:#e1ffe1,stroke:#333,stroke-width:2px,color:#000
+    style J fill:#e1ffe1,stroke:#333,stroke-width:2px,color:#000
 ```
 
 ---
